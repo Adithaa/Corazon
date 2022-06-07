@@ -5,38 +5,39 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-
-
 @keyframes slide-out-fwd-center{0%{transform:translateZ(1);opacity:1}100%{transform:translateZ(600px);opacity:0}}
-
 @-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
 
  #corazon {
     cursor: pointer;
     transition: transform 4s ease-in-out, opacity 1s ease-in-out;
     width: 50%;
     margin-left: 25%;
-   
-  }
+}
   
-  .heartbeat{-webkit-animation:heartbeat 3s ease-in-out infinite both;animation:heartbeat 0s ease-in-out infinite both opacity 4s ease-in-out;}
+
+ .heartbeat{-webkit-animation:heartbeat 3s ease-in-out infinite both;animation:heartbeat 0s ease-in-out infinite both opacity 4s ease-in-out;
+}
   
+
   .move {
     transform: translate(300px);
     opacity: 0;
-  }
+}
   
-  h1{text-align: center;
+
+ #mensaje {cursor: pointer;
+    transition: transform 4s ease-in-out, opacity 1s ease-in-out;
+    text-align: center;
     top: 40%;
     left: 45%;
     font-size: 40px;
     font-family: 'Pacifico', cursive;
     position: absolute;
-  }
-
-  .mensaje {cursor: pointer;
-    transition: transform 4s ease-in-out, opacity 1s ease-in-out;}
+    padding: auto;
+}
 
 
-#slide-out-fwd-center{animation:slide-out-fwd-center 5s cubic-bezier(.55,.085,.68,.53) both}
+ 
       

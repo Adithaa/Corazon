@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="corazon.css">
+
     <title>Animación corazón</title>
-    
+
 </head>
 <div>
     <div>
-    <h1 id="slide-out-fwd-center"> Me gustas</h1>
+        <h1 id="mensaje" class=slide-out-fwd-center">aaaaaaa</h1>
     </div>
     <img src="img/Heart-Box-PNG-Photos.png" id="corazon" class="heartbeat">
 </div>
-    
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-  corazon.onclick = () => corazon.classList.add('move');
-  mensaje.onclick = () => mensaje.classList.add('move');
+    // corazon.onclick = () => corazon.classList.add('move');
+
+    $('#corazon').click(() => {
+
+        let cora = document.getElementById('corazon');
+        cora.classList.add('move');
+
+        setTimeout(() => {
+            cora.hidden = true;
+        }, 1000);
+
+    });
+
+    $('#mensaje').click((e) => {
+        let m = document.getElementById('mensaje');
+        m.classList.add('move');
+    });
 
 </script>
-    
+
 </body>
+
 </html>
