@@ -4,30 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="corazon.css">
     <title>Animación corazón</title>
     
 </head>
-
+<div>
+    <div>
+    <h1 id="slide-out-fwd-center"> Me gustas</h1>
+    </div>
     <img src="img/Heart-Box-PNG-Photos.png" id="corazon" class="heartbeat">
+</div>
+    
 
-<style>
-#corazon {
-  cursor: pointer;
-  transition: transform 3s ease-in-out, opacity 2s ease-in-out;
-  width: 50%;
-  margin-left: 25%;
-}
-
-.heartbeat{-webkit-animation:heartbeat 3s ease-in-out infinite both;animation:heartbeat 0s ease-in-out infinite both opacity 4s ease-in-out;}
-
-.move {
-  transform: translate(300px);
-  opacity: 0;
-}
-</style>
 <script>
   corazon.onclick = () => corazon.classList.add('move');
+  mensaje.onclick = () => mensaje.classList.add('move');
+
 </script>
     
 </body>
