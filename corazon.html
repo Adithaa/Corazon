@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="corazon.css">
     <title>Animación corazón</title>
+    
 </head>
 
-    <img src="img/Heart-Box-PNG-Photos.png" id="corazon">
+    <img src="img/Heart-Box-PNG-Photos.png" id="corazon" class="heartbeat">
 
 <style>
 #corazon {
   cursor: pointer;
-  transition: transform 3s ease-in-out, opacity 4s ease-in-out;
+  transition: transform 3s ease-in-out, opacity 2s ease-in-out;
   width: 50%;
+  margin-left: 25%;
 }
 
+.heartbeat{-webkit-animation:heartbeat 3s ease-in-out infinite both;animation:heartbeat 0s ease-in-out infinite both opacity 4s ease-in-out;}
+
 .move {
-  transform: translateX(300px);
+  transform: translate(300px);
   opacity: 0;
 }
 </style>
