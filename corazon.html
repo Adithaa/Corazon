@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación corazón</title>
+</head>
+
+    <img src="img/Heart-Box-PNG-Photos.png" id="corazon">
+
+<style>
+#corazon {
+  cursor: pointer;
+  transition: transform 3s ease-in-out, opacity 4s ease-in-out;
+  width: 50%;
+}
+
+.move {
+  transform: translateX(300px);
+  opacity: 0;
+}
+</style>
+<script>
+  corazon.onclick = () => corazon.classList.add('move');
+</script>
+    
+</body>
+</html>
